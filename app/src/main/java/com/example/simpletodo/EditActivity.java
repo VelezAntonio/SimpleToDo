@@ -28,7 +28,7 @@ public class EditActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
 
-                intent.putExtra(MainActivity.KEY_ITEM_TEXT, etItem.getText());
+                intent.putExtra(MainActivity.KEY_ITEM_TEXT, etItem.getText().toString());
                 intent.putExtra(MainActivity.KEY_ITEM_POSITION, getIntent().getExtras().getInt(MainActivity.KEY_ITEM_POSITION));
                 setResult(RESULT_OK, intent);
                 finish();
